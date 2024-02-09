@@ -4,38 +4,332 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Personal Portfolio Website using HTML and CSS</title>
+    <title>Parth Parmar Portfolio</title>
+
+    <!-- Icons link -->
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
     />
-    <link rel="stylesheet" href="style.css" />
+
+    <!-- Google fonts (POPPINS) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
+    <nav>
+      <div class="container nav__container">
+        <a href="index.html" class="nav__logo">
+          <h3><i class="uil uil-ninja"></i> P.ART.H</h3>
+        </a>
+
+        <ul class="nav__menu">
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="#services">SERVICES</a></li>
+          <li><a href="#portfolio">PORTFOLIO</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+          <li>
+            <a
+              href="./assets/Parth-Manish-Parmar-Resume.pdf"
+              class="btn btn-primary"
+              download
+              ><i class="uil uil-download-alt"></i> Download CV</a
+            >
+          </li>
+        </ul>
+        <button id="open-menu-btn"><i class="uil uil-bars"></i></button>
+        <button id="close-menu-btn"><i class="uil uil-times"></i></button>
+      </div>
+    </nav>
+
     <header>
-      <h2 class="logo"><span>P</span>.art.h</h2>
-      <nav class="navigation">
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Portfolio</a>
-        <a href="#">Blog</a>
-        <a href="#">Contact</a>
-      </nav>
+      <div class="container header__container">
+        <div class="header__left">
+          <div>
+            <h3>Hello There! I'm</h3>
+            <h1>Parth<br />Parmar</h1>
+            <p>
+              Versatile professional with hands-on experience in designing and
+              implementing high-performing web applications.
+            </p>
+            <a href="#contact" class="btn btn-primary btn-lg">Get in touch</a>
+          </div>
+        </div>
+        <div class="header__right">
+          <div class="header__image">
+            <img src="./assets/avatar.png" />
+          </div>
+          <div class="header__right-bg"></div>
+          <ul class="header__socials">
+            <li>
+              <a href="https://github.com/parthparmar24" target="_blank"
+                ><i class="uil uil-github-alt"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/parth-manish-parmar-24p/"
+                target="_blank"
+                ><i class="uil uil-linkedin"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://discord.com/users/_parthparmar" target="_blank"
+                ><i class="uil uil-discord"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </header>
-    <section class="home">
-      <div class="content">
-        <h2>Hi, I'm <span>Parth Parmar </span></h2>
-        <h4>Frontend Developer</h4>
-        <p>
-          Versatile professional with hands-on experience in designing and
-          implementing high-performing web applications.
-        </p>
-        <div class="social-icons">
-          <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+
+    <section id="companies">
+      <div class="container companies__container">
+        <span>
+          <img src="./assets/accenture.png" />
+        </span>
+        <span>
+          <img src="./assets/analytics_fox.png" />
+        </span>
+        <span>
+          <img src="./assets/we3_tech.png" />
+        </span>
+      </div>
+    </section>
+
+    <section id="services">
+      <div class="container services__container">
+        <div class="services__left">
+          <h1>2+</h1>
+          <h4>Years Working Experience</h4>
+          <small
+            >Adept in transforming complex challenges into scalable software
+            solutions through strategic web development. Demonstrated ability to
+            collaborate with cross-functional teams, understand client
+            requirements, and translate them into innovative web solutions.
+            Adept at optimizing performance, maintaining clean code, and
+            integrating with backend systems.
+          </small>
+        </div>
+        <div class="services__right">
+          <h2>React Developer, Specialized in UI/UX, and Digital Designs.</h2>
+          <div class="services__cards">
+            <div class="services__card">
+              <span class="services__card-icon"
+                ><i class="uil uil-layers-alt"></i
+              ></span>
+              <h5>ReactJS</h5>
+              <a href="#">Discover More <i class="uil uil-arrow-right"></i></a>
+            </div>
+            <div class="services__card">
+              <span class="services__card-icon"
+                ><i class="uil uil-layers-alt"></i
+              ></span>
+              <h5>Website Development</h5>
+              <a href="#">Discover More <i class="uil uil-arrow-right"></i></a>
+            </div>
+            <div class="services__card">
+              <span class="services__card-icon"
+                ><i class="uil uil-layers-alt"></i
+              ></span>
+              <h5>Designing</h5>
+              <a href="#">Discover More <i class="uil uil-arrow-right"></i></a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
+
+    <section id="portfolio">
+      <div class="container portfolio__container">
+        <div class="portfolio__head">
+          <h3>Outwork, Successful products</h3>
+          <div class="portfolio__head-right">
+            <p>
+              Skilled in employing best coding practices, leveraging the React
+              ecosystem, and optimizing UI components. Proven track record in
+              enhancing application performance, user experience, and
+              development efficiency. Committed to staying updated with industry
+              trends and best practices to create cutting-edge applications. A
+              proactive learner, consistently staying updated with the latest
+              industry trends to ensure the delivery of high quality,
+              future-ready web solutions.
+            </p>
+            <a href="#">Explore More <i class="uil uil-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="portfolio__projects">
+          <article class="portfolio__project">
+            <span class="portfolio__project-image"
+              ><img src="./assets/project1.jpg"
+            /></span>
+            <div class="portfolio__cta">
+              <a
+                href="https://github.com/parthparmar24/my-first-repository"
+                class="btn"
+                target="_blank"
+                >Github</a
+              >
+              <a
+                href="https://parthparmar24.github.io/my-first-repository/"
+                class="btn btn-primary"
+                target="_blank"
+                >Live Demo</a
+              >
+            </div>
+          </article>
+          <article class="portfolio__project">
+            <span class="portfolio__project-image"
+              ><img src="./assets/project2.jpg"
+            /></span>
+            <div class="portfolio__cta">
+              <a
+                href="https://github.com/parthparmar24/Console-Finances"
+                class="btn"
+                target="_blank"
+                >Github</a
+              >
+              <a
+                href="https://parthparmar24.github.io/Console-Finances/"
+                class="btn btn-primary"
+                target="_blank"
+                >Live Demo</a
+              >
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimonials">
+      <h2>What Our Clients Say</h2>
+      <p class="lead">
+        Allow me to share with you the glowing testimonials from both clients
+        and colleagues who have had the pleasure of working with us.
+      </p>
+      <div class="container testimonials__container">
+        <!-- <article class="testimonial">
+          <p>
+            "Working with Parth was a game-changer for our online presence. His
+            expertise, creativity, and attention to detail transformed our
+            vision into a dynamic and user-friendly website. Highly recommended
+            for anyone seeking top-notch web development services!"
+          </p>
+          <div class="testimonial__client">
+            <span class="avatar">
+              <img src="./assets/avatar1.jpeg" />
+            </span>
+            <div class="testimonial__work">
+              <p><b>Vinit Sharma</b></p>
+              <small>CEO of WE3.tech</small>
+            </div>
+          </div>
+        </article>
+        <article class="testimonial">
+          <p>
+            "Thanks to Parth Parmar, our website went from outdated to
+            outstanding! His technical prowess and dedication to delivering
+            excellence made our online goals a reality. If you want a website
+            that truly stands out, look no further than Parth."
+          </p>
+          <div class="testimonial__client">
+            <span class="avatar">
+              <img src="./assets/avatar2.jpeg" />
+            </span>
+            <div class="testimonial__work">
+              <p><b>Neha Shewale</b></p>
+              <small>Senior Data Analyst</small>
+            </div>
+          </div>
+        </article>
+        <article class="testimonial">
+          <p>
+            "Choosing Parth was the best decision we made for our online
+            business. His innovative approach, seamless execution, and
+            unwavering support throughout the project exceeded our expectations.
+            With his expertise, our website became more than just a platform—it
+            became a cornerstone of our success."
+          </p>
+          <div class="testimonial__client">
+            <span class="avatar">
+              <img src="./assets/avatar3.jpeg" />
+            </span>
+            <div class="testimonial__work">
+              <p><b>Jagpreet Singh</b></p>
+              <small>Senior Testing Lead</small>
+            </div>
+          </div>
+        </article>
+        <article class="testimonial">
+          <p>
+            "Working with Parth was a breeze from start to finish. Their
+            professionalism, expertise, and commitment to excellence were
+            evident in every aspect of our project."
+          </p>
+          <div class="testimonial__client">
+            <span class="avatar">
+              <img src="./assets/avatar4.jpeg" />
+            </span>
+            <div class="testimonial__work">
+              <p><b>Lucia Marques</b></p>
+              <small>Team Lead at Accenture</small>
+            </div>
+          </div>
+        </article> -->
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container contact__container">
+        <div class="contact__left">
+          <h2>Let's Talk</h2>
+          <p>We'd Love to Hear From You</p>
+          <ul class="contact__socials">
+            <li>
+              <a href="https://github.com/parthparmar24" target="_blank"
+                ><i class="uil uil-github-alt"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/parth-manish-parmar-24p/"
+                target="_blank"
+                ><i class="uil uil-linkedin"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://discord.com/users/_parthparmar" target="_blank"
+                ><i class="uil uil-discord"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+        <form action="https://formspree.io/f/xeqyawzo" method="POST">
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input type="email" name="email" placeholder="Your Email" required />
+          <textarea
+            name="message"
+            rows="6"
+            placeholder="Message"
+            required
+          ></textarea>
+          <button type="submit" class="btn">
+            Send <i class="uil uil-arrow-right"></i>
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <footer><small>Copyright &copy; Parth Parmar</small></footer>
+
+    <script src="./js/testimonials.js"></script>
+    <script src="./js/main.js"></script>
   </body>
 </html>
